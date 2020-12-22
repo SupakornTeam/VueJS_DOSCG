@@ -50,23 +50,11 @@ app.post('/scgs', (req, res) => {
 
 
 
+
+
+  //Line bot 
+  app.post('/webhook', (req, res) => {
+    res.sendStatus(200)
+  })
+
   
-// // Each API may support multiple version. With this sample, we're getting
-// // v3 of the blogger API, and using an API key to authenticate.
-// const blogger = google.blogger({
-//   version: 'v3',
-//   auth: 'AIzaSyAK3RgqSLy1toc4lkh2JVFQ5ipuRB106vU&;callback=initMap'
-// });
-
-// const params = {
-//   blogId: '3213900'
-// };
-
-// // get the blog details
-// blogger.blogs.get(params, (err, res) => {
-//   if (err) {
-//     console.error(err);
-//     throw err;
-//   }
-//   console.log(`The blog url is ${res.data.url}`);
-// });
